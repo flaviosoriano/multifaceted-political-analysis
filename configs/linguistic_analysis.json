@@ -1,0 +1,5 @@
+{
+  "input_glob": "data/processed/discursos/discursos_*_limpo.csv",
+  "output_dir": "outputs/tables/linguistic_analysis",
+  "spacy_model": "pt_core_news_lg"
+}

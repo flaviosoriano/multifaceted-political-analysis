@@ -1,0 +1,16 @@
+{
+  "text_column": "transcricao",
+  "keep_first_speaker": true,
+  "combined": {
+    "enabled": true,
+    "input_path": "data/raw/discursos_camara_2003_2025.csv",
+    "output_path": "data/processed/discursos/discursos_all_years_combined.csv"
+  },
+  "yearly": {
+    "enabled": true,
+    "input_dir": "data/raw/discursos",
+    "output_dir": "data/processed/discursos",
+    "pattern": "discursos_*.csv",
+    "summary_path": "data/processed/discursos/processamento_resumo.csv"
+  }
+}

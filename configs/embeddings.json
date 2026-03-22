@@ -1,0 +1,10 @@
+{
+  "csv_path": "data/processed/discursos/discursos_all_years_combined.csv",
+  "output_base": "outputs/models/embeddings/discursos_all_years_combined_Linq",
+  "model_name": "Linq-AI-Research/Linq-Embed-Mistral",
+  "text_column": "transcricao_limpa",
+  "batch_size": 4,
+  "add_id_column": true,
+  "overwrite_csv": false,
+  "device": "cuda"
+}

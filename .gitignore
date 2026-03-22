@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local caches and model downloads
+.cache/
+cache/
+
+# Generated outputs
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/tables/*
+!outputs/tables/.gitkeep
+outputs/models/*
+!outputs/models/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+
+# Data placeholders
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/legacy/*
+!data/legacy/.gitkeep
+outputs/legacy/*
+!outputs/legacy/.gitkeep

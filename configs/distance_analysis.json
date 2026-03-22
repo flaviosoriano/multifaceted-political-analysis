@@ -1,0 +1,7 @@
+{
+  "csv_path": "outputs/models/embeddings/discursos_all_years_combined_Linq_com_id.csv",
+  "embeddings_path": "outputs/models/embeddings/discursos_all_years_combined_Linq_embeddings_raw.npy",
+  "tables_dir": "outputs/tables/distancias_por_ano",
+  "figures_dir": "outputs/figures/heatmaps_distancias",
+  "parties": null
+}

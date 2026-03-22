@@ -1,0 +1,54 @@
+{
+  "preprocessing": {
+    "run": false,
+    "run_combined": true,
+    "run_yearly": true,
+    "combined_input_path": "data/raw/discursos_camara_2003_2025.csv",
+    "combined_output_path": "data/processed/discursos/discursos_all_years_combined.csv",
+    "yearly_input_dir": "data/raw/discursos",
+    "yearly_output_dir": "data/processed/discursos",
+    "yearly_pattern": "discursos_*.csv",
+    "keep_first_speaker": true
+  },
+  "linguistic_analysis": {
+    "run": false,
+    "input_glob": "data/processed/discursos/discursos_*_limpo.csv",
+    "output_dir": "outputs/tables/linguistic_analysis",
+    "spacy_model": "pt_core_news_lg"
+  },
+  "topic_modeling": {
+    "run": false,
+    "input_glob": "data/processed/discursos/discursos_*_limpo.csv",
+    "output_dir": "outputs/models/bertopic",
+    "spacy_model": "pt_core_news_sm",
+    "sentence_model_name": "distiluse-base-multilingual-cased-v2",
+    "lemmatize_results": false
+  },
+  "embeddings": {
+    "run": false,
+    "csv_path": "data/processed/discursos/discursos_all_years_combined.csv",
+    "output_base": "outputs/models/embeddings/discursos_all_years_combined_Linq",
+    "model_name": "Linq-AI-Research/Linq-Embed-Mistral",
+    "batch_size": 4,
+    "add_id_column": true,
+    "overwrite_csv": false,
+    "device": "cuda"
+  },
+  "optimization": {
+    "run": false,
+    "csv_path": "data/processed/discursos/discursos_all_years_combined.csv",
+    "embeddings_path": "outputs/models/embeddings/discursos_all_years_combined_Linq_embeddings_norm.npy",
+    "output_dir": "outputs/models/optuna_clustering",
+    "n_trials": 1024,
+    "random_state": 42,
+    "timeout": null
+  },
+  "distance_analysis": {
+    "run": false,
+    "csv_path": "outputs/models/embeddings/discursos_all_years_combined_Linq_com_id.csv",
+    "embeddings_path": "outputs/models/embeddings/discursos_all_years_combined_Linq_embeddings_raw.npy",
+    "tables_dir": "outputs/tables/distancias_por_ano",
+    "figures_dir": "outputs/figures/heatmaps_distancias",
+    "parties": null
+  }
+}

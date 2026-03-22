@@ -1,0 +1,16 @@
+pandas
+numpy
+tqdm
+matplotlib
+seaborn
+scipy
+scikit-learn
+umap-learn
+hdbscan
+optuna
+sentence-transformers
+spacy
+nltk
+gensim
+bertopic
+colorcet

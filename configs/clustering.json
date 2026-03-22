@@ -1,0 +1,25 @@
+{
+  "csv_path": "data/processed/discursos/discursos_all_years_combined.csv",
+  "embeddings_path": "outputs/models/embeddings/discursos_all_years_combined_Linq_embeddings_norm.npy",
+  "deputy": {
+    "plot_path": "outputs/figures/mapa_politico_clusters_hdbscan.png",
+    "centroid_path": "outputs/figures/clusters_deputados.png",
+    "distribution_path": "outputs/tables/aaaclusterizacao_hdbscan.csv",
+    "composition_path": "outputs/tables/analise_composicao_clusters.csv",
+    "profiles_path": "outputs/tables/perfis_deputados_por_cluster.csv"
+  },
+  "party_trajectories": {
+    "plot_path": "outputs/figures/mapa_trajetoria_partidos.png"
+  },
+  "party_clusters": {
+    "plot_path": "outputs/figures/mapa_trajetoria_partidos_com_clusters.png",
+    "summary_path": "outputs/tables/party_cluster_summary.csv"
+  },
+  "optimization": {
+    "enabled": true,
+    "output_dir": "outputs/models/optuna_clustering",
+    "n_trials": 1024,
+    "random_state": 42,
+    "timeout": null
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "input_glob": "data/processed/discursos/discursos_*_limpo.csv",
+  "output_dir": "outputs/models/bertopic",
+  "spacy_model": "pt_core_news_sm",
+  "sentence_model_name": "distiluse-base-multilingual-cased-v2",
+  "lemmatize_results": false,
+  "min_words": 10,
+  "min_topic_size": 10
+}
